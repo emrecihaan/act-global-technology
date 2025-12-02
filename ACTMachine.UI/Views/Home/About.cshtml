@@ -1,0 +1,49 @@
+﻿@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> SharedLocalizer
+@{
+    ViewData["Title"] = SharedLocalizer["About"];
+    var currentCulture = Context.Features.Get<IRequestCultureFeature>()?.RequestCulture.Culture.TwoLetterISOLanguageName ?? "tr";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header pt-5 mb-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="bg-white p-5">
+                    <h1 class="display-6 text-uppercase mb-3 animated slideInDown">@SharedLocalizer["About"]</h1>
+                    <nav aria-label="breadcrumb animated slideInDown">
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item"><a href="#">@SharedLocalizer["HomePage"]</a></li>
+                            <li class="breadcrumb-item" aria-current="page">@SharedLocalizer["About"]</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Start -->
+<div class="container-fluid pt-6 pb-6">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img">
+                    <img class="img-fluid w-100" src="img/aboutimage.jpeg">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="display-6 text-uppercase mb-4">@SharedLocalizer["HomeServiceTitle"]</h1>
+                <p class="mb-4">
+                    @SharedLocalizer["AboutTextFirst"]
+                </p>
+                <p class="mb-4">
+                    @SharedLocalizer["AboutTextSecond"]
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->

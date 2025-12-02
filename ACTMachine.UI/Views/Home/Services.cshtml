@@ -1,0 +1,109 @@
+﻿@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> SharedLocalizer
+@{
+    ViewData["Title"] = SharedLocalizer["About"];
+    var currentCulture = Context.Features.Get<IRequestCultureFeature>()?.RequestCulture.Culture.TwoLetterISOLanguageName ?? "tr";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header pt-5 mb-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="bg-white p-5">
+                    <h1 class="display-6 text-uppercase mb-3 animated slideInDown">@SharedLocalizer["Services"]</h1>
+                    <nav aria-label="breadcrumb animated slideInDown">
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item"><a href="#">@SharedLocalizer["HomePage"]</a></li>
+                            <li class="breadcrumb-item" aria-current="page">@SharedLocalizer["Services"]</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Service Start -->
+<div class="container-fluid service pt-6 pb-6">
+    <div class="container">
+        <div class="row g-2">
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom:75px">
+                <div class="service-item">
+                    <div class="service-inner pb-5">
+                        <img class="img-fluid w-100" src="/img/manufacturing.jpg" alt="">
+                        <div class="service-text px-5 pt-4">
+                            <h5 class="text-uppercase">
+                                @SharedLocalizer["Manufacturing"]
+                            </h5>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="margin-bottom:75px">
+                <div class="service-item">
+                    <div class="service-inner pb-5">
+                        <img class="img-fluid w-100" src="/img/automaticworkcellService.png" alt="">
+                        <div class="service-text px-5 pt-4">
+                            <h5 class="text-uppercase">
+                                @SharedLocalizer["PipeForming"]
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="margin-bottom:75px">
+                <div class="service-item">
+                    <div class="service-inner pb-5">
+                        <img class="img-fluid w-100" src="img/service-2.jpg" alt="">
+                        <div class="service-text px-5 pt-4">
+                            <h5 class="text-uppercase">
+                                @SharedLocalizer["Welding"]
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.4s" style="margin-bottom:75px">
+                <div class="service-item">
+                    <div class="service-inner pb-5">
+                        <img class="img-fluid w-100" src="/img/montage.png" alt="">
+                        <div class="service-text px-5 pt-4">
+                            <h5 class="text-uppercase">
+                                @SharedLocalizer["Montage"]
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom:75px">
+                <div class="service-item">
+                    <div class="service-inner pb-5">
+                        <img class="img-fluid w-100" src="/img/testcontrol.jpg" alt="">
+                        <div class="service-text px-5 pt-4">
+                            <h5 class="text-uppercase">
+                                @SharedLocalizer["TestControl"]
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="margin-bottom:75px">
+                <div class="service-item">
+                    <div class="service-inner pb-5">
+                        <img class="img-fluid w-100" src="/img/externalProcess.png" alt="">
+                        <div class="service-text px-5 pt-4">
+                            <h5 class="text-uppercase">
+                                @SharedLocalizer["ExternalProcess"]
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->

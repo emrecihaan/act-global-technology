@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Hakkımızda</value>
+  </data>
+  <data name="AboutTextFirst" xml:space="preserve">
+    <value>ACT Global Teknoloji, araç klima boruları üretiminde uzmanlaşmış, yenilikçi ve kaliteli üretimi temel ilke edinmiş bir mühendislik firmasıdır. Talaşlı imalat, boru şekillendirme, kaynak, montaj, test/kontrol ve dış proses hizmetleriyle üretimin her aşamasında yüksek standartlarda çözümler sunmaktayız. Modern teknolojiye dayalı üretim altyapımız ve deneyimli ekibimiz ile müşteri beklentilerini aşmayı hedefliyoruz.</value>
+  </data>
+  <data name="AboutTextSecond" xml:space="preserve">
+    <value>Sektördeki tecrübemiz, kaliteye olan bağlılığımız ve süreç odaklı yaklaşımımız sayesinde, hem yurt içi hem yurt dışı pazarlarda güvenilir bir çözüm ortağı olarak konumlanmaktayız. ACT Global Machine olarak, sürdürülebilir üretim anlayışı ve sürekli iyileştirme prensipleriyle müşterilerimize değer katıyor, global ölçekte rekabetçi bir üretim gücü sunuyoruz.</value>
+  </data>
+  <data name="Adress" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Adress1" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="AllRightReserved" xml:space="preserve">
+    <value>Tüm Hakları Saklıdır.</value>
+  </data>
+  <data name="AutomaticWorkCell" xml:space="preserve">
+    <value>Modüler tasarım çoklu şekillendirme otomatik çalışma hücresi</value>
+  </data>
+  <data name="AutomaticWorkCellTextFifth" xml:space="preserve">
+    <value>5. boşaltma</value>
+  </data>
+  <data name="AutomaticWorkCellTextFirst" xml:space="preserve">
+    <value>1. Boru Yükleyici</value>
+  </data>
+  <data name="AutomaticWorkCellTextFourth" xml:space="preserve">
+    <value>4. Algılama modülü ile birlikte</value>
+  </data>
+  <data name="AutomaticWorkCellTextSecond" xml:space="preserve">
+    <value>2. Flanş yükleme ve soğuk şekillendirme</value>
+  </data>
+  <data name="AutomaticWorkCellTextThird" xml:space="preserve">
+    <value>3. Yiv açma</value>
+  </data>
+  <data name="BrazingMachineText" xml:space="preserve">
+    <value>Otomotiv iklimlendirmesi için alüminyum alaşımlı boru baskı plakalarının kaynak işlemini profesyonel teknolojiyle güçlendiren alüminyum alaşımlı tel dolgulu lazer lehimleme makinesi, otomotiv imalat sanayine verimli, çevre dostu ve kaliteli kaynak çözümleri getiriyor.</value>
+  </data>
+  <data name="brazingMachineTitle" xml:space="preserve">
+    <value>Alüminyum Alaşımlı Tel Dolum Lazer Lehimleme Makinesi</value>
+  </data>
+  <data name="BusinessHours" xml:space="preserve">
+    <value>Çalışma Saatleri</value>
+  </data>
+  <data name="CallUs" xml:space="preserve">
+    <value>Bizi Ara</value>
+  </data>
+  <data name="CallUs1" xml:space="preserve">
+    <value>Bizi Ara</value>
+  </data>
+  <data name="CompleteProjects" xml:space="preserve">
+    <value>Tamamlanan Projeler</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="ContactText" xml:space="preserve">
+    <value>Size Özel Çözümlerimiz İçin Bizimle Hemen İletişime Geçin.</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Bize Ulaşın</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Detay</value>
+  </data>
+  <data name="ECS32Title" xml:space="preserve">
+    <value>Elektrikli Dikey Boru Çakma Makinası</value>
+  </data>
+  <data name="ECS32TitleShortText" xml:space="preserve">
+    <value>Bu makine kauçuk boruları, alüminyum boruları ve demir boruları kıvırmak için özel bir ekipmandır.</value>
+  </data>
+  <data name="ECS32TitleText" xml:space="preserve">
+    <value>Bu makine kauçuk boruları, alüminyum boruları ve demir boruları kıvırmak için özel bir ekipmandır. Kıvrılabilen ürünlerin maksimum dış çapı (Ф 32mm 1,25)'dir. Servo motor, tahrik mekanizması boyunca sıkma için kurşun vidayı tahrik eder ve tahrik parçasının ön kısmına yüklenen basınç sensörü, enerji tasarrufu sağlayan, çevre dostu, sessiz ve hızlı bir şekilde tahrik basıncını kontrol eder ve yönetir.</value>
+  </data>
+  <data name="EfmMachineText" xml:space="preserve">
+    <value>Bu ekipman, ekstrüzyon ve pah kırma fonksiyonlarını entegre eden entegre bir boru işleme makinesidir. Güçlü güç ve hassas konumlandırma özelliğine sahip, iş istasyonu geçişi için servo motorlar ve vidalı millerle kontrol edilir. Manuel yüklemeyi destekler. Tek bir işlem tüm işlem döngüsünü tamamlayabilir ve hem iç hem de dış açıları ve düz uçları aynı anda işleyebilir.</value>
+  </data>
+  <data name="EndFormattingMachine" xml:space="preserve">
+    <value>Otomatik titreşimli diskli tam elektrikli şekillendirme makinesi（E-FM-4P1J-D30）</value>
+  </data>
+  <data name="EndFormttingShortText" xml:space="preserve">
+    <value>Bu ekipman, ekstrüzyon ve pah kırma fonksiyonlarını entegre eden entegre bir boru işleme makinesidir.</value>
+  </data>
+  <data name="Experience" xml:space="preserve">
+    <value>Uzmanlık</value>
+  </data>
+  <data name="ExternalProcess" xml:space="preserve">
+    <value>Dış Proses</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Cuma</value>
+  </data>
+  <data name="HomePage" xml:space="preserve">
+    <value>Anasayfa</value>
+  </data>
+  <data name="HomeServicePoint" xml:space="preserve">
+    <value>UÇTAN UCA ÜRETİM ÇÖZÜMLERİ</value>
+  </data>
+  <data name="HomeServicePoint2" xml:space="preserve">
+    <value>GLOBAL STANDARTLARDA ÜRETİM</value>
+  </data>
+  <data name="HomeServicePoint3" xml:space="preserve">
+    <value>Müşteriye Özel Çözümlerle Esnek Üretim İmkanı</value>
+  </data>
+  <data name="HomeServicePoint4" xml:space="preserve">
+    <value>Kalite Belgeleriyle Güvence Altında Üretim Süreçleri</value>
+  </data>
+  <data name="HomeServicePoint5" xml:space="preserve">
+    <value>Yüksek Teknolojiyle Entegre Dış Proses Yönetimi</value>
+  </data>
+  <data name="HomeServicePoint6" xml:space="preserve">
+    <value>KALİTELİ ENDÜSTRİ TEKNOLOJİLERİYLE MÜKEMMEL ÜRETİM</value>
+  </data>
+  <data name="HomeServiceText" xml:space="preserve">
+    <value>ACT Global Teknoloji, araç klima boruları üretiminde uzmanlaşmış, yüksek hassasiyetli üretim çözümleri sunan bir mühendislik firmasıdır. Talaşlı imalat, boru şekillendirme, kaynak, montaj ve test/kontrol gibi üretim süreçlerinde kalite ve verimliliği ön planda tutarak sektörde fark yaratıyoruz. Tüm süreçlerimiz, müşteri odaklı yaklaşım ve teknik mükemmeliyet ilkesiyle yönetilmektedir.</value>
+  </data>
+  <data name="HomeServiceTitle" xml:space="preserve">
+    <value>OTOMOTİV İKLİMLENDİRME HASSAS BORU ÇÖZÜMLERİ</value>
+  </data>
+  <data name="Machinery" xml:space="preserve">
+    <value>Makine Parkuru</value>
+  </data>
+  <data name="Manufacturing" xml:space="preserve">
+    <value>Talaşlı İmalat</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Pazartesi</value>
+  </data>
+  <data name="Montage" xml:space="preserve">
+    <value>Montaj</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Sayfalar</value>
+  </data>
+  <data name="PipeForming" xml:space="preserve">
+    <value>Boru Şekillendirme</value>
+  </data>
+  <data name="Production" xml:space="preserve">
+    <value>Üretim</value>
+  </data>
+  <data name="QuickLinks" xml:space="preserve">
+    <value>Hızlı Linkler</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>Daha Fazla</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Cumartesi</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Hizmetlerimiz</value>
+  </data>
+  <data name="SKW25ShortText" xml:space="preserve">
+    <value>Klima, otomobil, mobilya, spor ekipmanları, sıhhi tesisat ekipmanları ve diğer endüstrilerde yaygın olarak kullanılır.</value>
+  </data>
+  <data name="SKW25ShortText1" xml:space="preserve">
+    <value>Özellikle boru bükme için tasarlanmıştır.</value>
+  </data>
+  <data name="SKW25ShortText2" xml:space="preserve">
+    <value>Maksimum bükme hızı 180°/s</value>
+  </data>
+  <data name="SKW25ShortText3" xml:space="preserve">
+    <value>Bükme verimliliği 3-5 saniye/büküm</value>
+  </data>
+  <data name="SKW25Title" xml:space="preserve">
+    <value>25 MM Boru Bükme Makinası</value>
+  </data>
+  <data name="SliderTitle1" xml:space="preserve">
+    <value>ENDUSTRİYEL ÜRETİMDE UZMANLIK</value>
+  </data>
+  <data name="SliderTitle2" xml:space="preserve">
+    <value>HATASIZ ÜRETİM GÜVENCESİ</value>
+  </data>
+  <data name="SliderTitle3" xml:space="preserve">
+    <value>YÜKSEK PERFORMANSLI BORU ÇÖZÜMLERİ</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>Her Bükümde Güç, Her Formda Mükemmellik</value>
+  </data>
+  <data name="SloganText" xml:space="preserve">
+    <value>ACT Global Teknoloji olarak, yılların getirdiği sektör deneyimimizle endüstriyel çözümler sunuyoruz.
+Bugüne kadar farklı sektörlerden birçok projede başarıyla yer alarak güvenilirliğimizi kanıtladık.
+Müşterilerimize kaliteli hizmeti, ileri teknoloji ile birleştirerek sürdürülebilir çözümler üretmeye devam ediyoruz.</value>
+  </data>
+  <data name="SloganTitle" xml:space="preserve">
+    <value>Memnun Müşteriler</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Pazar</value>
+  </data>
+  <data name="TestControl" xml:space="preserve">
+    <value>Test / Kontrol</value>
+  </data>
+  <data name="Welding" xml:space="preserve">
+    <value>Kaynak</value>
+  </data>
+  <data name="WorkCellProduct" xml:space="preserve">
+    <value>Son Ürün Çizimi</value>
+  </data>
+  <data name="WorkDone" xml:space="preserve">
+    <value>Biten İş</value>
+  </data>
+</root>

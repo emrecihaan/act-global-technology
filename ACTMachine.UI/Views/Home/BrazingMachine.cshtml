@@ -1,0 +1,65 @@
+﻿@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> SharedLocalizer
+@{
+    ViewData["Title"] = SharedLocalizer["About"];
+    var currentCulture = Context.Features.Get<IRequestCultureFeature>()?.RequestCulture.Culture.TwoLetterISOLanguageName ?? "tr";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header pt-5 mb-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="bg-white p-5">
+                    <h1 class="display-6 text-uppercase mb-3 animated slideInDown">@SharedLocalizer["Machinery"]</h1>
+                    <nav aria-label="breadcrumb animated slideInDown">
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item"><a href="/">@SharedLocalizer["HomePage"]</a></li>
+                            <li class="breadcrumb-item"><a href="/machinery">@SharedLocalizer["Machinery"]</a></li>
+                            <li class="breadcrumb-item" aria-current="page">@SharedLocalizer["brazingMachineTitle"]</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Testimonial Start -->
+<div class="container-fluid pt-6 pb-6">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp">
+            <h4 class="display-20 text-uppercase mb-5">@SharedLocalizer["brazingMachineTitle"]</h4>
+        </div>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7 wow fadeInUp" style="margin-top: 100px">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                        @* <div class="d-flex align-items-center mb-4"> *@
+                        <img src="/img/BrazingMachine.png" alt="">
+
+                        @* </div> *@
+                    </div>
+
+                    <div class="testimonial-item">
+                        <div class="d-flex align-items-center mb-4">
+                            <video controls autoplay muted preload="auto" width="640" height="360">
+                                <source src="/img/brazingMachine.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 wow fadeInUp">
+                <div class="testimonial-img">
+                    <p class="fs-5">
+                        @SharedLocalizer["BrazingMachineText"]
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->

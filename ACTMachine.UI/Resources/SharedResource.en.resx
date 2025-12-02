@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="AboutTextFirst" xml:space="preserve">
+    <value>ACT Global Technology is an engineering company that has adopted the basic principle of dispersed, advanced and quality production of vehicle air conditioning pipes. We offer high standard solutions at every stage of production with machining, pipe shaping, welding, assembly, test/control and external process services. We aim to exceed customer expectations with our modern technology-based production infrastructure and our customers.</value>
+  </data>
+  <data name="AboutTextSecond" xml:space="preserve">
+    <value>Thanks to our experience in the sector, our commitment to quality and our process-oriented approach, we are positioned as a reliable solution partner in both domestic and international markets. As ACT Global Machine, we add value to our customers with a sustainable production approach and continuous improvement principles, and offer a competitive production power on a global scale.</value>
+  </data>
+  <data name="Adress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AllRightReserved" xml:space="preserve">
+    <value>All Right Reserved.</value>
+  </data>
+  <data name="AutomaticWorkCell" xml:space="preserve">
+    <value>Modular design multi Forming automatic work cell</value>
+  </data>
+  <data name="AutomaticWorkCellTextFifth" xml:space="preserve">
+    <value>5. Unloading</value>
+  </data>
+  <data name="AutomaticWorkCellTextFirst" xml:space="preserve">
+    <value>1. Tube Loader</value>
+  </data>
+  <data name="AutomaticWorkCellTextFourth" xml:space="preserve">
+    <value>4. Combined with detection module</value>
+  </data>
+  <data name="AutomaticWorkCellTextSecond" xml:space="preserve">
+    <value>2. Flange loading and cold forming</value>
+  </data>
+  <data name="AutomaticWorkCellTextThird" xml:space="preserve">
+    <value>3. Grooving</value>
+  </data>
+  <data name="BrazingMachineText" xml:space="preserve">
+    <value>Aluminum alloy wire filling laser brazing machine,empowering the welding processing of aluminum alloy pipe pressure plates for automotive air conditioning with professional technology, brings efficient, environmentally friendly and high-quality welding solutions to the automotive manufacturing industry.</value>
+  </data>
+  <data name="brazingMachineTitle" xml:space="preserve">
+    <value>Aluminum Alloy Wire Filling Laser Brazing Machine</value>
+  </data>
+  <data name="BusinessHours" xml:space="preserve">
+    <value>Business Hours</value>
+  </data>
+  <data name="CallUs" xml:space="preserve">
+    <value>Call Us</value>
+  </data>
+  <data name="CompleteProjects" xml:space="preserve">
+    <value>Complete Projects</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="ContactText" xml:space="preserve">
+    <value>Contact Us Now for Our Special Solutions for You.</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="Detail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="ECS32Title" xml:space="preserve">
+    <value>Electric Vertical Pipe Fastening Machine（EC-32S-V）</value>
+  </data>
+  <data name="ECS32TitleShortText" xml:space="preserve">
+    <value>This machine is a special equipment for crimping rubber pipes, aluminum pipes and iron pipes.</value>
+  </data>
+  <data name="ECS32TitleText" xml:space="preserve">
+    <value>This machine is a special equipment for crimping rubber pipes, aluminum pipes and iron pipes. The maximum outer diameter of products that can be crimped is( Ф 32mm 1.25 ). The servo motor drives the lead screw for crimping through the drive mechanism, and the pressure sensor loaded at the front of the drive part controls and manages the drive pressure, which is energy-saving, environment-friendly, quiet and quickly.</value>
+  </data>
+  <data name="EfmMachineText" xml:space="preserve">
+    <value>This equipment is an integrated pipe processing machine, integrating extrusion and chamfering forming functions. It is controlled by servo motors and ball screws for workstation switching, featuring strong power and precise positioning. It supports manual loading. One operation can complete the entire cycle of actions, and it can process both inner and outer angles as well as flat ends simultaneously.</value>
+  </data>
+  <data name="EndFormattingMachine" xml:space="preserve">
+    <value>All-electric forming machine with automatic vibrating disk（ E-FM-4P1J-D30）</value>
+  </data>
+  <data name="EndFormttingShortText" xml:space="preserve">
+    <value>This equipment is an integrated pipe processing machine that integrates extrusion and chamfering functions.</value>
+  </data>
+  <data name="Experience" xml:space="preserve">
+    <value>Experience</value>
+  </data>
+  <data name="ExternalProcess" xml:space="preserve">
+    <value>External Process</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="HomePage" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="HomeServicePoint" xml:space="preserve">
+    <value>End-to-End Production Solutions</value>
+  </data>
+  <data name="HomeServicePoint2" xml:space="preserve">
+    <value>Production at Global Standards</value>
+  </data>
+  <data name="HomeServicePoint3" xml:space="preserve">
+    <value>Flexible Production Opportunity with Customer-Specific Solutions</value>
+  </data>
+  <data name="HomeServicePoint4" xml:space="preserve">
+    <value>Production Processes Secured by Quality Certificates</value>
+  </data>
+  <data name="HomeServicePoint5" xml:space="preserve">
+    <value>External Process Management Integrated with High Technology</value>
+  </data>
+  <data name="HomeServicePoint6" xml:space="preserve">
+    <value>Perfect Production with Quality Industrial Technologies</value>
+  </data>
+  <data name="HomeServiceText" xml:space="preserve">
+    <value>ACT Global Technology is an engineering company specialized in the production of automotive air conditioning tubes, offering high-precision manufacturing solutions. We stand out in the industry by prioritizing quality and efficiency in all production processes, including machining, tube forming, welding, assembly, and testing/control. All our operations are managed with a customer-oriented approach and a commitment to technical excellence.</value>
+  </data>
+  <data name="HomeServiceTitle" xml:space="preserve">
+    <value>Precision Automotive Climate Systems</value>
+  </data>
+  <data name="Machinery" xml:space="preserve">
+    <value>Machinery</value>
+  </data>
+  <data name="Manufacturing" xml:space="preserve">
+    <value>Manufacturing</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="Montage" xml:space="preserve">
+    <value>Montage</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="PipeForming" xml:space="preserve">
+    <value>Pipe Forming</value>
+  </data>
+  <data name="Production" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="QuickLinks" xml:space="preserve">
+    <value>Quick Links</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>Read More</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="SKW25ShortText" xml:space="preserve">
+    <value>Widely used in air conditioning, automobile, furniture, sports equipment, plumbing equipment and other industries.</value>
+  </data>
+  <data name="SKW25ShortText1" xml:space="preserve">
+    <value>Especially designed for pipe bending.</value>
+  </data>
+  <data name="SKW25ShortText2" xml:space="preserve">
+    <value>Maximum bending speed 180°/s</value>
+  </data>
+  <data name="SKW25ShortText3" xml:space="preserve">
+    <value>Bending efficiency 3-5 seconds/twist</value>
+  </data>
+  <data name="SKW25Title" xml:space="preserve">
+    <value>SKW-25</value>
+  </data>
+  <data name="SliderTitle1" xml:space="preserve">
+    <value>EXPERTISE IN INDUSTRIAL PRODUCTION</value>
+  </data>
+  <data name="SliderTitle2" xml:space="preserve">
+    <value>ERROR-FREE PRODUCTION ASSURANCE</value>
+  </data>
+  <data name="SliderTitle3" xml:space="preserve">
+    <value>HIGH PERFORMANCE PIPE SOLUTIONS</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>Power in Every Twist, Perfection in Every Form</value>
+  </data>
+  <data name="SloganText" xml:space="preserve">
+    <value>As ACT Global Technology, we offer industrial solutions with our years of industry experience.
+We have proven our reliability by successfully taking part in many projects from different sectors to date.
+We continue to produce sustainable solutions for our customers by combining quality service with advanced technology.</value>
+  </data>
+  <data name="SloganTitle" xml:space="preserve">
+    <value>Satisfied Clients</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="TestControl" xml:space="preserve">
+    <value>Test / Control</value>
+  </data>
+  <data name="Welding" xml:space="preserve">
+    <value>Welding</value>
+  </data>
+  <data name="WorkCellProduct" xml:space="preserve">
+    <value>End-Product Drawing</value>
+  </data>
+  <data name="WorkDone" xml:space="preserve">
+    <value>Work Done</value>
+  </data>
+</root>

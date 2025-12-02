@@ -1,0 +1,122 @@
+﻿@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> SharedLocalizer
+@{
+    ViewData["Title"] = SharedLocalizer["About"];
+    var currentCulture = Context.Features.Get<IRequestCultureFeature>()?.RequestCulture.Culture.TwoLetterISOLanguageName ?? "tr";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header pt-5 mb-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="bg-white p-5">
+                    <h1 class="display-6 text-uppercase mb-3 animated slideInDown">@SharedLocalizer["Machinery"]</h1>
+                    <nav aria-label="breadcrumb animated slideInDown">
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item"><a href="/">@SharedLocalizer["HomePage"]</a></li>
+                            <li class="breadcrumb-item" aria-current="page">@SharedLocalizer["Machinery"]</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<div class="container-fluid service pt-6 pb-6">
+    <div class="container">
+        @* <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="display-6 text-uppercase mb-5">@SharedLocalizer["Machinery"]</h1>
+        </div> *@
+        <div class="row g-3">
+           
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-inner pb-5">
+                        <img class="img-fluid w-100" src="~/img/automaticworkcell.png" alt="">
+                        <div class="service-text px-5 pt-4">
+                            <h5 class="text-uppercase">
+                                @SharedLocalizer["AutomaticWorkCell"]
+                            </h5>
+                            <p>
+                                @SharedLocalizer["AutomaticWorkCellTextFirst"]
+                            </p>
+                            <p>
+                                @SharedLocalizer["AutomaticWorkCellTextSecond"]
+                            </p>
+                            <p>
+                                @SharedLocalizer["AutomaticWorkCellTextThird"]
+                            </p>
+                           
+                        </div>
+                        <a class="btn btn-light px-3" href="/machinery/automoticWorkCellDetail">
+                            @SharedLocalizer["Detail"]<i class="bi bi-chevron-double-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-inner pb-5">
+                        <img class="img-fluid w-100" src="~/img/EC32SV158852.png" alt="">
+                        <div class="service-text px-5 pt-4">
+                            <h5 class="text-uppercase">
+                                @SharedLocalizer["ECS32Title"]
+                            </h5>
+                            <p>
+                                @SharedLocalizer["ECS32TitleShortText"]
+                            </p>
+                        </div>
+                        <a class="btn btn-light px-3" href="/machinery/efs32Detail">
+                            @SharedLocalizer["Detail"]<i class="bi bi-chevron-double-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-inner pb-5">
+                        <img class="img-fluid w-100" src="~/img/skw25.jpg" alt="">
+                        <div class="service-text px-5 pt-4">
+                            <h5 class="text-uppercase">
+                                @SharedLocalizer["SKW25Title"]
+                            </h5>
+                            <p>
+                                @SharedLocalizer["SKW25ShortText"]
+                            </p>
+                        </div>
+                        <a class="btn btn-light px-3" href="/machinery/skw25Detail">
+                            @SharedLocalizer["Detail"]<i class="bi bi-chevron-double-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3">
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-inner pb-5">
+                        <img class="img-fluid w-100" src="~/img/BrazingMachine.png" alt="">
+                        <div class="service-text px-5 pt-4">
+                            <h5 class="text-uppercase">
+                                @SharedLocalizer["brazingMachineTitle"]
+                            </h5>
+                            <p>
+                                @SharedLocalizer["BrazingMachineText"]
+                            </p>
+
+                        </div>
+                        <a class="btn btn-light px-3" href="/machinery/brazingMachine">
+                            @SharedLocalizer["Detail"]<i class="bi bi-chevron-double-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>

@@ -4,6 +4,21 @@
 @{
     ViewData["Title"] = SharedLocalizer["About"];
     var currentCulture = Context.Features.Get<IRequestCultureFeature>()?.RequestCulture.Culture.TwoLetterISOLanguageName ?? "tr";
+
+    // Marka, PDF ve Logo listesi (wwwroot klasör yapınıza tam uyumlu)
+    var pdfBrands = new List<(string Name, string PdfUrl, string LogoUrl)>
+    {
+        ("BMW", "/pdf/BMW.pdf", "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/bmw.svg"),
+    ("Fiat", "/pdf/FIAT.pdf", "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/fiat.svg"),
+    ("Ford", "/pdf/FORD.pdf.pdf", "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ford.svg"),
+    ("Hyundai", "/pdf/HYUNDAI.pdf", "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/hyundai.svg"),
+    ("Kia", "/pdf/KIA.pdf", "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/kia.svg"),
+    ("Mercedes-Benz", "/pdf/MERCEDES-BENZ.pdf", "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mercedes.svg"),
+    ("Toyota", "/pdf/TOYOTA(20260806-181057).pdf", "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/toyota.svg"),
+    ("Volkswagen", "/pdf/VOLKSWAGEN.pdf.pdf", "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/volkswagen.svg"),
+    ("Volvo", "/pdf/VOLVO.pdf.pdf", "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/volvo.svg"),
+    ("Audi", "/pdf/AUDI.pdf", "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/audi.svg")
+    };
 }
 
 <!-- Page Header Start -->
@@ -25,17 +40,41 @@
     </div>
 </div>
 <!-- Page Header End -->
-<!-- Team Start -->
-<div class="container-fluid team pt-6 pb-6">
+<!-- Brand PDF Catalog Section Start -->
+<div class="container-fluid py-4 mb-5">
     <div class="container">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+      @*   <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h2 class="text-uppercase font-weight-bold">Marka Katalogları</h2>
+            <p class="text-muted">İncelemek istediğiniz markanın güncel PDF kataloğunu indirebilirsiniz.</p>
+        </div> *@
+
+        <div class="row g-3 justify-content-center">
+            @foreach (var brand in pdfBrands)
+            {
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="brand-pdf-card text-center p-3 h-100 d-flex flex-column justify-content-between">
+                        <div class="brand-logo-wrapper">
+                            <img src="@brand.LogoUrl" alt="@brand.Name" class="img-fluid brand-logo grayscale-logo" onerror="this.style.display='none'" />
+                            <span class="brand-name">@brand.Name</span>
+                        </div>
+                        <a href="@brand.PdfUrl" download target="_blank" class="btn btn-sm download-pdf-btn mt-3">
+                            <i class="fa fa-file-pdf me-1"></i> PDF İndir
+                        </a>
+                    </div>
+                </div>
+            }
         </div>
+    </div>
+</div>
+<!-- Brand PDF Catalog Section End -->
+<!-- Team / Product Grid Start -->
+<div class="container-fluid team pt-2 pb-6">
+    <div class="container">
         <div class="row g-4">
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="/img/product1.png" alt="">
-                        
                     </div>
                 </div>
             </div>
@@ -43,7 +82,6 @@
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="/img/product2.png" alt="">
-                       
                     </div>
                 </div>
             </div>
@@ -51,7 +89,6 @@
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="/img/product3.png" alt="">
-                        
                     </div>
                 </div>
             </div>
@@ -64,12 +101,11 @@
             </div>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 mt-2">
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="/img/product5.png" alt="">
-
                     </div>
                 </div>
             </div>
@@ -77,7 +113,6 @@
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="/img/product6.png" alt="">
-
                     </div>
                 </div>
             </div>
@@ -85,7 +120,6 @@
                 <div class="team-item">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="/img/product7.png" alt="">
-
                     </div>
                 </div>
             </div>
@@ -97,185 +131,71 @@
                 </div>
             </div>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product9.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product10.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product11.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product12.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product13.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product14.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product15.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product16.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product17.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product18.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product19.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product20.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product21.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product22.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product23.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product24.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product25.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product26.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product27.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product28.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product29.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid w-100" src="/img/product30.png" alt="">
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <!-- Team End -->
+
+<style>
+    .brand-pdf-card {
+        background: #ffffff;
+        border: 1px solid #eef0f2;
+        border-radius: 10px;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        position: relative;
+    }
+
+        .brand-pdf-card:hover {
+            border-color: #e59b15;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            transform: translateY(-4px);
+        }
+
+    .brand-logo-wrapper {
+        min-height: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .grayscale-logo {
+        max-height: 42px;
+        width: auto;
+        object-fit: contain;
+        filter: grayscale(100%) opacity(0.55);
+        transition: filter 0.3s ease, transform 0.3s ease;
+    }
+
+    .brand-pdf-card:hover .grayscale-logo {
+        filter: grayscale(0%) opacity(1);
+        transform: scale(1.05);
+    }
+
+    .brand-name {
+        font-size: 13px;
+        font-weight: 600;
+        color: #6c757d;
+        transition: color 0.3s ease;
+    }
+
+    .brand-pdf-card:hover .brand-name {
+        color: #212529;
+    }
+
+    .download-pdf-btn {
+        font-size: 12px;
+        font-weight: 600;
+        color: #e59b15;
+        background-color: transparent;
+        border: 1px solid #e59b15;
+        border-radius: 6px;
+        padding: 6px 12px;
+        transition: all 0.2s ease;
+    }
+
+        .download-pdf-btn:hover {
+            background-color: #e59b15;
+            color: #ffffff !important;
+        }
+</style>
